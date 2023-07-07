@@ -1,0 +1,69 @@
+.fieldItem {
+    width: 40px;
+    height: 40px;
+    border: 2px solid black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.fieldItemBot {
+    cursor: pointer;
+}
+
+
+.notShip {
+    background-color: rgba(27, 169, 51, .4);
+}
+
+.notShip:hover {
+    background-color: rgba(27, 169, 51, .7);
+}
+
+
+.ship {
+    background-color: rgba(0, 0, 255, 0.7);
+    transition: background-color .3s;
+}
+
+.ship:hover {
+    background-color: rgba(0, 0 ,255, 1);
+   
+}
+
+.hit {
+    position: relative;
+	width: 24px;
+	height: 24px;
+	opacity: 1;
+	cursor: pointer;
+    transition: opacity ease 0.5s;
+}
+
+.hit::before,
+.hit::after {
+	content: '';
+    position: absolute;
+	top: 10px;
+	display: block;
+	width: 24px;
+	height: 3px;
+	background: red;
+}
+
+.hit::before {
+	transform: rotate(45deg);
+}
+
+.hit::after {
+	transform: rotate(-45deg);
+}
+
+.miss {
+    width: 15px;
+    height: 15px;
+    border-radius: 500px;
+    background-color: red;
+}

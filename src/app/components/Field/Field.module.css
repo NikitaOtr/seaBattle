@@ -1,0 +1,35 @@
+
+.title {
+    text-align: center;
+}
+
+.field {
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    grid-template-rows: 1fr 10fr;
+}
+
+.letters {
+    grid-column: 1/3;
+    grid-row: 1;
+
+    display: flex;
+}
+
+.numbers {
+    grid-column: 1;
+    grid-row: 2;
+
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.map {
+    grid-column: 2;
+    grid-row: 2;
+
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+}
