@@ -7,6 +7,16 @@ interface IProps {
     disabled?: boolean
 }
 
+type Typ = number
+
+const N = <T,>(props: { n: T }) => {
+    return (
+        <div>
+            {123123}
+        </div>
+    )
+};
+
 export const ButtonApp: React.FC<IProps> = ({ children, onClick, disabled }) => {
     const onClickButton = (e: React.MouseEvent<HTMLButtonElement>) => {
         onClick && onClick(e);
